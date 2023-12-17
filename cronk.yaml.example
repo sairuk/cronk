@@ -1,0 +1,18 @@
+---
+general:
+  verbose: False
+  ui: False
+  clock: 60
+server:
+  address: 0.0.0.0
+  port: 8080
+watch:
+  mame:
+    repo: https://github.com/mamedev/mame.git
+    branch: master
+    tag: latest
+    buildcmd: ~/devel/mame-build/run_container_RELEASE
+    access: local
+    path: ~/volumes/mame-RELEASE/
+    workingdir: ~/devel/mame-build/
+    cron: "30 12 * * *"

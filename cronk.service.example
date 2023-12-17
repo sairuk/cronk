@@ -1,0 +1,9 @@
+[Unit]
+Description=cronk
+ConditionPathExists=/path/to/cronk.yaml
+
+[Service]
+ExecStart=/path/to/cronk.py
+
+[Install]
+WantedBy=default.target
